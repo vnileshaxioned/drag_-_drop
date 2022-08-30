@@ -138,6 +138,7 @@ header .wrapper {
   color: #fff;
   font-size: 30px;
   text-transform: uppercase;
+  transition: all .3s ease;
 }
 
 .menu-list:last-child .menu-item { border-right: none; }
@@ -203,27 +204,28 @@ header .wrapper {
 }
 
 .task {
+  width: 76.5%;
+  padding: 25px 0;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 25px 0;
-  width: 76.5%;
-  margin: 0 auto;
 }
 
 .task-list {
-  flex-basis: 13.5%;
   margin-right: 1.5%;
+  flex-basis: 13.5%;
 }
 
-
 .task-item {
+  padding: 10px;
+  border-radius: 8px;
   display: block;
   background-color: #000;
-  padding: 10px;
   color: #fff;
   font-size: 27px;
-  border-radius: 8px;
+  cursor: pointer;
   text-align: center;
+  transition: all .3s ease;
 }
 /*=================================
   main styling ends here
@@ -232,21 +234,19 @@ header .wrapper {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer .wrapper {
+  margin: 37px auto;
+  background-color: #000;
+}
 
-
-
-
-
-
-
+.footer-logo .logo { margin: 32px; }
  /*=================================
   footer styling ends here
 =================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
+@media only screen and (min-width: 995px) {
+  .menu-item:hover { color: #ED1C24; }
+  .task-item:hover { background-color: rgb(94, 94, 94); }
 }  
