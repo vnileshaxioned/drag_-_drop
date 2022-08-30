@@ -107,7 +107,7 @@ li {
   Header styling starts here
 =================================*/
 header .wrapper {
-  margin: 38px auto;
+  margin: 38px auto 32px;
   display: flex;
   background-color: #000;
   align-items: center;
@@ -148,14 +148,83 @@ header .wrapper {
 /*=================================
   main styling starts here
 =================================*/
+.drag-and-drop .wrapper { width: 89%; }
+
+.heading {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.priority {
+  display: flex;
+  width: 98%;
+  margin: 34px auto;
+}
+
+.priority-list {
+  border-radius: 14px;
+  flex-basis: 28.7%;
+}
+
+.priority-list:nth-child(1) { margin-right: 7.8%; }
+.priority-list:nth-child(2) { margin-right: 6%; }
+.priority-list:nth-child(3n) { margin-right: 0; }
+
+.priority-heading {
+  padding: 20px;
+  border-radius: 14px 14px 0 0;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.priority-list:nth-child(1) .priority-heading {
+  border: 2px solid #ED1C24;
+  background-color: #ED1C24;
+}
+
+.priority-list:nth-child(2) .priority-heading {
+  border: 2px solid #F26422;
+  background-color: #F26422;
+}
+
+.priority-list:nth-child(3) .priority-heading {
+  border: 2px solid #FFFD01;
+  background-color: #FFFD01;
+}
+
+.priority-content {
+  min-height: 364px;
+  border: 1px solid #000;
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  width: 76.5%;
+  margin: 0 auto;
+}
+
+.task-list {
+  flex-basis: 13.5%;
+  margin-right: 1.5%;
+}
 
 
-
-
-
-
-
-
+.task-item {
+  display: block;
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
+  font-size: 27px;
+  border-radius: 8px;
+  text-align: center;
+}
 /*=================================
   main styling ends here
 =================================*/
