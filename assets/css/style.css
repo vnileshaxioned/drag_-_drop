@@ -100,18 +100,47 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 93.23%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper {
+  margin: 38px auto;
+  display: flex;
+  background-color: #000;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.main-logo { flex-basis: 15%; }
 
+.logo {
+  margin: 32px 14%;
+  color: #fff;
+  font-size: 44px;
+  font-weight: 700;
+}
 
+.navbar { flex-basis: 40%; }
 
+.menu {
+  margin: 0 3%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
+.menu-item {
+  padding: 0 10px;
+  border-right: 1px solid #fff;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
 
+.menu-list:last-child .menu-item { border-right: none; }
 /*=================================
   Header styling ends here
 =================================*/  
